@@ -4,6 +4,7 @@ obj-y   +=  mt65xx_lcm_list.o
 obj-y   +=  hx8357c_hvga_dsi_cmd.o
 obj-y   +=  hx8379a_dsi_vdo_azet_ips.o
 obj-y   +=  hx8389b_qhd_dsi_vdo_tianma.o
+obj-y   +=  hx8394a_hd720_dsi_vdo_tianma.c
 obj-y   +=  ili9486_hvga_dsi_cmd.o
 obj-y   +=  ili9806c_dsi_vdo_azet_ips.o
 obj-y   +=  nt35512_wvga_dsi_vdo_boe.o
