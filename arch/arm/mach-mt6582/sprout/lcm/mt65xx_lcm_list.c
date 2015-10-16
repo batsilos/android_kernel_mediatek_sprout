@@ -55,6 +55,7 @@ extern LCM_DRIVER hx8369b_dsi_vdo_lcm_drv;
 extern LCM_DRIVER hx8369b_wvga_dsi_vdo_drv;
 extern LCM_DRIVER hx8389b_qhd_dsi_vdo_drv;
 extern LCM_DRIVER hx8369_hvga_lcm_drv;
+extern LCM_DRIVER hx8394a_hd720_dsi_vdo_tianma;
 extern LCM_DRIVER ili9481_lcm_drv;
 extern LCM_DRIVER ili9486_hvga_dsi_cmd_lcm_drv;
 extern LCM_DRIVER nt35582_lcm_drv;
@@ -755,7 +756,7 @@ static unsigned char lcd_id_pins_value = 0xFF;
 
 /******************************************************************************
 Function:       which_lcd_module_triple
-  Description:    read LCD ID PIN status,could identify three status:high¡¢low¡¢float
+  Description:    read LCD ID PIN status,could identify three status:highÂ¡Â¢lowÂ¡Â¢float
   Input:           none
   Output:         none
   Return:         LCD ID1|ID0 value
