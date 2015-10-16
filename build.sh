@@ -137,10 +137,10 @@ else
               -e '$ a\# CONFIG_DEBUG_HIGHMEM is not set' \
               $outdir/.config
       else
-        if [ "$CUSTOM_DRAM_SIZE" == "8G" ]; then
-            # Config DRAM size as 8G (0x40000000).
+        if [ "$CUSTOM_DRAM_SIZE" == "16G" ]; then
+            # Config DRAM size as 16G (0x80000000).
             sed --in-place=.orig \
-                -e 's/\(CONFIG_MAX_DRAM_SIZE_SUPPORT=\).*/\10x40000000/' \
+                -e 's/\(CONFIG_MAX_DRAM_SIZE_SUPPORT=\).*/\10x80000000/' \
                 -e 's/\(CONFIG_CMDLINE=.*\)"/\1 vmalloc=280M"/' \
                 -e 's/.*\(CONFIG_HIGHMEM\).*/\1=y/' \
                 -e '$ a\# CONFIG_HIGHPTE is not set' \
